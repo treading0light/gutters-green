@@ -83,8 +83,8 @@
       </form>
     </div>
 
-    <SuccessModal :dialog="['Email Sent!', 'A gutter expert will contact you shortly. Feel free to explore the blog!']" 
-    :buttonText="Blog"
+    <SuccessModal :dialog="['Email Sent!', 'A gutter expert will contact you shortly. Feel free to explore the rest of the website!']" 
+    :buttonText="'Home'"
     :open="modal" />
   </div>
 </template>
@@ -105,10 +105,11 @@ const sendEmail = async () => {
     name: name.value,
     email: email.value,
     message: message.value,
+    phone: phoneNumber.value
   };
 
   try {
-    const response = await useFetch('/api/sendEmail', {
+    const {data} = await useFetch('/api/sendEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -116,10 +117,14 @@ const sendEmail = async () => {
       body: JSON.stringify(payload),
     });
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Email sent:', data);
+    console.log(data.value.statusCode)
+
+    if (data.value.statusCode == 200) {
+      console.log(data.value.message);
       modal.value = true
+      console.log(modal.value)
+    } else if (data.value.statusCode == 500){
+      console.log('Server error: ', data.value.message)
     }
   } catch (error) {
     console.error('Could not send email:', error);

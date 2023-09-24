@@ -12,8 +12,8 @@ export default defineEventHandler(async (event) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'tonygreen@theguttersgreen.com',
-        pass: 'hhszcduwxdqfwprr',
+        user: config.public.businessEmail,
+        pass: config.businessEmailPassword,
       },
     });
 
@@ -29,7 +29,8 @@ export default defineEventHandler(async (event) => {
       from: body.email,
       to: config.public.businessEmail,
       subject: `New Contact from ${body.name}`,
-      text: body.message,
+      text: `Name: ${body.name} /nEmail: ${body.email} /nPhone: ${body.phone} /n
+      Message: /n${body.message}` ,
     };
     
     try {

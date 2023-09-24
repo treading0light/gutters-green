@@ -27,6 +27,9 @@
   </template>
   
   <script setup>
+  const config = useRuntimeConfig()
+
+  console.log(config.businessEmailPassword)
 //   useHead({
 //     link: [
 //         {

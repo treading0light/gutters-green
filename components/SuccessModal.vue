@@ -21,7 +21,13 @@
                   </div>
                 </div>
                 <div class="mt-5 sm:mt-6">
-                  <button type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" @click="open = false">{{ buttonText }}</button>
+                  <NuxtLink to="/">
+                    <button type="button" @click="open = false" 
+                    class="inline-flex w-full justify-center rounded-md bg-[#09860f] px-3 py-2 text-sm font-semibold
+                      text-white shadow-sm hover:bg-[#193b1b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+                      focus-visible:outline-black" >{{ buttonText }}</button>
+                  </NuxtLink>
+                  
                 </div>
               </DialogPanel>
             </TransitionChild>
@@ -38,8 +44,8 @@
 
   const props = defineProps({
     dialog: Array,
-    butonText: String
+    buttonText: String,
+    action: String,
+    open: Boolean
   })
-  
-  const open = ref(false)
   </script>
