@@ -20,6 +20,7 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "@nuxt/image": "^1.0.0-rc.2",
+    "@vercel/analytics": "^1.0.2",
     "vue3-carousel-nuxt": "^1.1.0"
   }
 }
