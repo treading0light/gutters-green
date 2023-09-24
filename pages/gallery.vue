@@ -33,6 +33,13 @@
 
 <script setup>
 
+useHead({
+        title: 'Our Work Gallery | The Gutters Green Seattle/Tacoma Installations',
+        meta: [
+            { name: 'description', content: 'Browse our gallery to see the quality of our gutter installations in the Seattle/Tacoma region. At The Gutters Green, we pride ourselves on delivering impeccable craftsmanship.'}
+        ]
+    })
+
 const galleries = [
     [
         { src: 'images/gallery-2/20210630_175829_HDR.jpg', alt: 'White seamless gutters on residential home. Inside outside corners.'},

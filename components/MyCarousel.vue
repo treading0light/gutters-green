@@ -3,7 +3,7 @@
 
         <Slide v-for="slide in slides" :key="slide.src" class="carousel__item">
             <figure>
-                <img :src="slide.src" :alt="slide.alt" >
+                <img :src="slide.src" :alt="slide.alt" rel="preload" >
                 <figcaption v-if="slide.cap">{{ slide.cap }}</figcaption>
             </figure>         
         </Slide>
