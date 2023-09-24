@@ -35,26 +35,26 @@
 
 const galleries = [
     [
-        { src: 'images/gallery-2/20210630_175829_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210803_144043_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210804_154758.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210804_155022_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210823_173734_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210823_173852_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-2/20210824_144418_HDR.jpg', alt: 'Test Caption'},
+        { src: 'images/gallery-2/20210630_175829_HDR.jpg', alt: 'White seamless gutters on residential home. Inside outside corners.'},
+        { src: 'images/gallery-2/20210803_144043_HDR.jpg', alt: 'White seamless gutters on residential home. Inside outside corners.'},
+        { src: 'images/gallery-2/20210804_154758.jpg', alt: 'Musket Brown seamless gutters on brick house. Inside outside corners.'},
+        { src: 'images/gallery-2/20210804_155022_HDR.jpg', alt: 'Musket Brown seamless gutters on brick house. Inside outside corners.'},
+        { src: 'images/gallery-2/20210823_173734_HDR.jpg', alt: 'White seamless gutters on light blue house, inside barge boards.'},
+        { src: 'images/gallery-2/20210823_173852_HDR.jpg', alt: 'White seamless gutters on light blue house, inside barge boards.'},
+        { src: 'images/gallery-2/20210824_144418_HDR.jpg', alt: 'Black seamless gutters on gray house.'},
         
     ],
     [
-        { src: 'images/gallery-custom/20210302_105158.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210302_114322.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210302_114339.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210303_135935_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210316_182358_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210908_164952.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210928_130510.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210928_130517_HDR.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20210928_173936.jpg', alt: 'Test Caption'},
-        { src: 'images/gallery-custom/20211112_192018.jpg', alt: 'Test Caption'},
+        { src: 'images/gallery-custom/20210302_105158.jpg', alt: 'Custom inside gutter corner with outlet, black.'},
+        { src: 'images/gallery-custom/20210302_114322.jpg', alt: 'Custom inside gutter corner with outlet, black.'},
+        { src: 'images/gallery-custom/20210302_114339.jpg', alt: 'Black seamless gutters on light yellow house, inside outside 30 degree corners.'},
+        { src: 'images/gallery-custom/20210303_135935_HDR.jpg', alt: 'Black 2x3 downspot attached to custom inside corner.'},
+        { src: 'images/gallery-custom/20210316_182358_HDR.jpg', alt: 'White seamless gutter, very acute inside corner, custom.'},
+        { src: 'images/gallery-custom/20210908_164952.jpg', alt: 'White seamless gutter, custom fit.'},
+        { src: 'images/gallery-custom/20210928_130510.jpg', alt: 'White seamless gutter, custom shallow fit.'},
+        { src: 'images/gallery-custom/20210928_130517_HDR.jpg', alt: 'White seamless gutter, custom shallow fit.'},
+        { src: 'images/gallery-custom/20210928_173936.jpg', alt: 'White seamless gutter, custom shallow fit, installed on house.'},
+        { src: 'images/gallery-custom/20211112_192018.jpg', alt: '3 inch round downspout, custom.'},
     ]
 ]
 

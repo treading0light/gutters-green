@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full z-50 bg-gray-900">
+    <header class="w-full z-50 bg-gray-800">
 
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <a href="/" class="-m-1.5 p-1.5">
@@ -60,7 +60,7 @@
   const navigation = [
     { name: 'Contact', href: '/contact' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'About', href: '#about' },
+    { name: 'About', href: '/#about' },
   ]
   
   const mobileMenuOpen = ref(false)

@@ -16,9 +16,9 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-700">
               <p class="flex-auto">{{ feature.description }}</p>
-              <p class="mt-6">
+              <!-- <p class="mt-6">
                 <a :href="feature.href" class="text-sm font-semibold leading-6 text-green-800">Learn more <span aria-hidden="true">→</span></a>
-              </p>
+              </p> -->
             </dd>
           </div>
         </dl>
