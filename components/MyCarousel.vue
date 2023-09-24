@@ -1,5 +1,5 @@
 <template>
-    <Carousel :items-to-show="1.5">
+    <Carousel :items-to-show="1.75">
 
         <Slide v-for="slide in slides" :key="slide.src" class="carousel__item">
             <figure>
@@ -9,7 +9,7 @@
         </Slide>
 
         <template #addons>
-            <Navigation />
+            <Navigation class="bg-white" />
         </template>
 
     </Carousel>
@@ -24,7 +24,7 @@ const props = defineProps({
 
 </script>
 
-<style scoped>
+<style>
 .carousel__slide {
   padding: 5px;
 }
@@ -36,6 +36,11 @@ const props = defineProps({
   /* display: flex;
   justify-content: center;
   align-items: center; */
+}
+
+.carousel__icon {
+    border-radius: 100%;
+  background-color: white;
 }
 
 </style>
