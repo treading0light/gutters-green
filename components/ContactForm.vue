@@ -58,6 +58,12 @@
             <div>
             </div>
             <div class="sm:col-span-2">
+
+              <label for="lastName" tabindex="-1" class="hidden text-sm font-semibold leading-6 text-white">Email</label>
+              <div class="mt-2.5">
+                <input type="text" v-model="lastName" name="lastName" id="lastName" autocomplete="off" class="hidden w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+
               <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
               <div class="mt-2.5">
                 <input type="email" v-model="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
@@ -77,7 +83,7 @@
             </div>
           </div>
           <div class="mt-8 flex justify-end">
-            <button type="submit" class="rounded-md bg-[#09860f] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#193b1b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#193b1b]">Send message</button>
+            <button ref="submitButton" type="submit" class="rounded-md bg-[#09860f] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#193b1b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#193b1b]">Send message</button>
           </div>
         </div>
       </form>
@@ -94,15 +100,20 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/24/
 import { ref } from 'vue';
 
 const name = ref('');
+const lastName = ref('')
 const email = ref('');
 const message = ref('');
 const phoneNumber = ref('');
 
 const modal = ref(false)
+const submitButton = ref(false)
 
 const sendEmail = async () => {
+  submitButton.value.setAttribute("disabled", '')
+
   const payload = {
     name: name.value,
+    lastName: lastName.value,
     email: email.value,
     message: message.value,
     phone: phoneNumber.value

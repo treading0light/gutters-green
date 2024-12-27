@@ -3,6 +3,12 @@ import nodemailer from 'nodemailer';
 export default defineEventHandler(async (event) => {
     // console.log(event)
     const body = await readBody(event);
+    if (body.lastName !== '') {
+      console.log('WEE WOO WEE WOO, BOT DETECTED!')
+      return {
+        statusCode: 400
+      }
+    }
     console.log(body)
 
     const config = useRuntimeConfig()
